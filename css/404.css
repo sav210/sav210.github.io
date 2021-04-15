@@ -1,0 +1,14 @@
+body{
+background-color: #e74c3c;
+font-family: 'Gotham Pro';
+color: white;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('gotham.ttf') format('truetype'),
+    url('gotham.woff') format('woff'),
+    url('gotham.woff2') format('woff2');
+}
+.404{
+font-size: 35px;
+}
