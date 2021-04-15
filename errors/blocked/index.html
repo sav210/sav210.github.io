@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css">
+<head>
+    <script src="/js/fade.js"></script>
+    <title>Доступ к ресурсу заблокирован</title>
+    <script>
+        setTimeout(() =>
+        {
+            document.body.style.backgroundColor = "#250d0f";
+            document.getElementById('sorry').style.paddingTop = "20px";
+        }, 5000);
+    </script>
+</head>
+
+<body onload="fade('block', 30, 500); fade('sorry', 10, 5000);">
+    <center>
+        <h1 id='block' style="opacity: 0;">Доступ к ресурсу заблокирован</h1>
+        <p id='sorry' style="opacity: 0;" title='Ваш IP-адрес заблокирован'>Нам очень жаль :(</p>
+    </center>
+</body>
+
+</html>

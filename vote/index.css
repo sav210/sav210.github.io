@@ -1,0 +1,173 @@
+body
+{
+    background-color: #0e0e1c;
+    font-size: 14pt;
+    color: white;
+    padding-left: 20px;
+    transition: 0.3s ease-in-out;
+    z-index: 0;
+    font-family: 'Gotham Pro';
+}
+a
+{
+    text-decoration: none;
+    color:#0070fa;
+    font-size: 100%;
+}
+A:hover
+{
+    color:#1968c8;
+}
+A:visited
+{
+    color:#0070FA;
+}
+A:active
+{
+    color:#175fb8;
+    font-size: 95%;
+}
+.translate
+{
+    transition: 0.3s ease-in-out;
+}
+.button
+{
+    position: relative;
+    font-size: 25px;
+    background: #0070FA;
+    padding: 10px;
+    border-radius: 100px;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 20px;
+}
+.button:hover
+{
+    background: #1968c8;
+    width: 280px;
+    height: 28px;
+    font-size: 24px;
+}
+.button:active
+{
+    background:#175fb8;
+    width: 260px;
+    height: 26px;
+    font-size: 23px;
+}
+
+.buttons
+{
+    width: max-content;
+    height: 50px;
+}
+
+.menu
+{
+    width: 1000px;
+    height: 200px;
+}
+.menu_child
+{
+    display: inline-block;
+}
+
+.menu_element
+{
+    color: #eaeaea;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+.menu_element:hover
+{
+    color: #c5c5c5;
+}
+.menu_element:active
+{
+    color: #b6b6b6;
+}
+#icon
+{
+    width: 192px;
+    height: 192px;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('gotham.ttf') format('truetype'),
+    url('gotham.woff') format('woff'),
+    url('gotham.woff2') format('woff2');
+}
+
+.advantage
+{
+    background: #16162a;
+    width: 100%;
+    height: 128px;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+}
+.footer
+{
+    left: 0; bottom: 0;
+    padding: 10px;
+}
+.advantage_title
+{
+    padding-left: 80px;
+    font-size: 30px;
+}
+.advantage_description
+{
+    padding-left: 80px;
+    font-size: 15px;
+}
+
+.discord
+{
+    opacity: 0.3;
+    height: 70px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.discord:hover
+{
+    opacity: 1;
+    height: 450px;
+}
+
+.footer_child
+{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.interval
+{
+    width: 100%;
+    height: 200px;
+}
+
+.vote_button
+{
+    color:#0070fa;
+    font-size: 24pt;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.vote_button:hover
+{
+    color: #1968c8;
+}
+
+.vote_button:active
+{
+    color: #175fb8;
+}

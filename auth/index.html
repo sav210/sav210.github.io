@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Авторизация</title>
+    <script src="https://vegabot.xyz/crashprotect/js/auth.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="utf-8">
+    <script>
+        async function main(){
+        let url = new URL(window.location.href);
+        let s = new URLSearchParams(url.search);
+        var param = s.get("code");
+        var ga = await getauth(param);
+        document.cookie = "authcode=" + ga["access_token"] + "; path=/"
+        window.location.href = "/";
+        }
+        main();
+</script>
+</head>
+<body>
+    <h1>Авторизация...</h1>
+</body>
+</html>
