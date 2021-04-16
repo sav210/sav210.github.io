@@ -1,5 +1,5 @@
 body{
-background-color: #e74c3c;
+background-color: #f05a69;
 font-family: 'Gotham Pro';
 color: white;
 }
@@ -10,5 +10,22 @@ color: white;
     url('gotham.woff2') format('woff2');
 }
 .404{
-font-size: 35px;
+font-size: 45px;
+}
+a{
+ text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #eee;
+}
+a:visited{
+    color: white;
+}
+a:active{
+    color: #ccc;
+}
+.home{
+    font-weight: bold;
+    font-size: 35px;
 }
