@@ -20,6 +20,7 @@ body{
     width: 48px;
     border-radius: 100%;
     border: 2px solid #0070FA;
+    user-select: none;
 }
 .header .link{
     top: -40%;
@@ -33,6 +34,7 @@ a{
     text-decoration: none;
     color: white;
     transition: 0.2s ease;
+    user-select: none;
 }
 a:hover{
     color: #eee;
@@ -47,6 +49,16 @@ a:visited{
 ::selection{
     background-color: #0070FA;
     color: #f2f2f2;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0070FA;
+    height: 150px;
 }
 
 .main{
@@ -94,6 +106,21 @@ a:visited{
     bottom: 0;
     font-size: 20px;
 }
+
+.footer .links{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 15px;
+}
+
+.footer .links a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    bottom: 10px;
+    position: relative;
+}
+
 .footer p{
     margin-left: 20px;
     margin-top: 10px;
@@ -116,4 +143,35 @@ a:visited{
     width: 250px;
     min-width: 150px;
     cursor: default;
+}
+
+.terms{
+    margin-top: 5%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.terms h1{
+    color: #0070FA
+}
+.terms p{
+    margin-top: -10px;
+}
+.terms h2{
+    font-size: 25px;
+}
+
+.terms h3{
+    font-size: 18px;
+}
+
+.terms ul{
+    margin-top: -5px;
+}
+.terms .begin{
+    margin-top: -5px;
+}
+
+.attention{
+    color: #e74c3c;
 }
