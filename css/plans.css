@@ -1,0 +1,19 @@
+.plans{
+    width: 100%;
+    margin-top: 5%;
+}
+.plans .lists{
+    display: inline-block;
+    margin: 0 4px;
+    background-color: #2f3136;
+    border-radius: 5px;
+    width: 250px;
+    height: auto;
+}
+.lists .plan{
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+}
