@@ -1,0 +1,38 @@
+body{
+    background-color: #f2f2f2;
+    color: #161616;
+    font-family: 'PT Sans', Sans-Serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    user-select: none;
+}
+a:hover{
+    color: #111;
+}
+a:active{
+    color: #222;
+}
+a:visited{
+    color: black
+}
+
+
+.main{
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+}
+.main h1{
+    font-size: 50px;
+    color: #f45d2a;
+}
+.main p{
+    margin-top: -3%;
+}
+
+.reasons{
+    margin-top: 15px;
+}
