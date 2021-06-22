@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <title>Crash Protect</title>
@@ -18,8 +19,9 @@
         <meta property="og:description" content="Crash Protect – Discord бот, предназначенный для защиты серверов от краша, спама и рейдов.">
         <meta property="og:site_name" content="Crash Protect">
         <script src="js/stata.js"></script>
-        <script src="js/counter.js"></script>
-        <script>refresh_stata(); setInterval(() => {refresh_stata()}, 30000)</script>
+        <script src="js/cookie.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <script>refresh_stata(true); setInterval(() => {refresh_stata(false)}, 30000)</script>
     </head>
     <body>
         <div class="header">
@@ -36,8 +38,8 @@
                 <a href="/support">Поддержка</a>
             </div>
             <div class="servers">
-                <span>Серверов: <b id="servers">Н/Д</b></span>
-                <span>Шардов: <b id="shards">Н/Д</b></span>
+                <span>Серверов: <b id="servers">0</b></span>
+                <span>Шардов: <b id="shards">0</b></span>
             </div>
         </div>
         <div class="footer">
@@ -46,12 +48,32 @@
                 <a href="/invite/">Пригласить бота</a>
             </div>
         </div>
+        <div id="cookie_banner"><span>Данный сайт использует куки для сохранения некоторых параметров. Пользуясь им, вы соглашаетесь с этим.</span> <div onclick="accept_cookie()">Хорошо</div></div>
         <script>
             var probablity = Math.floor(Math.random() * 20);
             console.log(probablity)
             if(probablity == 17){
                 document.getElementById("icon").src = "https://upload.wikimedia.org/wikipedia/commons/d/dd/%D0%9F%D0%BE%D0%BF-%D0%B8%D1%82.jpg";
                 document.getElementById("desc").innerHTML = "Попытер с 2021 года";
+            }
+            var cook = readCookie("accepted");
+            var authcode = readCookie("authcode");
+            if(cook == null)
+            {
+                var banner = document.getElementById("cookie_banner");
+                banner.style.visibility = "visible";
+                setTimeout(function(){
+                banner.style.opacity = "1";
+                },1000);
+            }
+            function accept_cookie()
+            {
+                var banner = document.getElementById("cookie_banner");
+                document.cookie = "accepted=1; path=/"
+                banner.style.opacity = "0";
+                setTimeout(function(){
+                    banner.style.visibility = "hidden";
+                },1000);
             }
         </script>
     </body>

@@ -4,7 +4,7 @@ async function getauth(code){
         "client_secret": 'Cb7KcxZIcrQaaKU9tfjqbZ-Ykmb6xZU7',
         "grant_type": "authorization_code",
         "code": code,
-        "redirect_uri": "https://vegabot.xyz/crashprotect/auth",
+        "redirect_uri": "https://crashprotect.ml/auth",
         "scope": 'identify%20email%20guilds'
     };
     const response = await fetch('https://discord.com/api/oauth2/token', {

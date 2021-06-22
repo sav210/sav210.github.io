@@ -1,9 +1,13 @@
 body{
     background-color: #14141b;
     color: white;
-    font-family: 'Rubik';
+    font-family: 'Rubik', system-ui, sans-serif;
     margin-left: 20px;
     margin-top: 10px;
+    font-weight: 300;
+}
+.mi{
+    font-family: "Material Icons Outlined";
 }
 .header{
     width: 100%;
@@ -174,4 +178,45 @@ a:visited{
 
 .attention{
     color: #e74c3c;
+}
+b{
+    font-weight: 400;
+}
+
+#cookie_banner{
+    transition: 1s;
+    width: 100%;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(16, 16, 21, 0.7);
+    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#cookie_banner div{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background: #2D3745;
+    font-weight: 400;
+    margin: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    align-items: center;
+    line-height: 40px;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#cookie_banner div:hover{
+    background: #394a61;
+}
+#cookie_banner div:active{
+    background: #3d526e;
 }
