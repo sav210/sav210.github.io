@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/mobile.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
@@ -29,6 +31,11 @@
             <a href="/invite" class="link">Пригласить бота</a>
             <a href="/support" class="link">Поддержка</a>
             <a href="https://docs.crashprotect.ml" class="link">Документация</a>
+            <div class="mobile_menu" id="mm">
+                <a href="https://docs.crashprotect.ml" class="link_mob">Документация</a>
+                <p class="mi menu close" onclick="menu()">close</p>
+            </div>
+            <p class="mi menu" id="menu" onclick="menu()">menu</p>
         </div>
         <div class="main">
             <h1>Crash Protect</h1>
@@ -45,7 +52,7 @@
         <div class="footer">
             <p>© 2021, Cymon | Все права защищены.</p>
             <div class="links">
-                <a href="/invite/">Пригласить бота</a>
+                <a href="/invite">Пригласить бота</a>
             </div>
         </div>
         <div id="cookie_banner"><span>Данный сайт использует куки для сохранения некоторых параметров. Пользуясь им, вы соглашаетесь с этим.</span> <div onclick="accept_cookie()">Хорошо</div></div>
