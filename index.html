@@ -22,6 +22,7 @@
         <meta property="og:site_name" content="Crash Protect">
         <script src="js/stata.js"></script>
         <script src="js/cookie.js"></script>
+        <script src="js/thefinalcountdown.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
         <script>refresh_stata(true); setInterval(() => {refresh_stata(false)}, 30000)</script>
     </head>
@@ -47,6 +48,27 @@
             <div class="servers">
                 <span>Серверов: <b id="servers">0</b></span>
                 <span>Шардов: <b id="shards">0</b></span>
+            </div>
+        </div>
+        <div class="countdown">
+            <h2>До Дня рождения Crash Protect осталось:</h2>
+            <div class="units">
+                <div class="unit">
+                    <h3 id="days">0</h3>
+                    <p id="dunit">дней</p>
+                </div>
+                <div class="unit">
+                    <h3 id="hours">0</h3>
+                    <p id="hunit">часов</p>
+                </div>
+                <div class="unit">
+                    <h3 id="minutes">0</h3>
+                    <p id="dunit">минут</p>
+                </div>
+                <div class="unit">
+                    <h3 id="seconds">0</h3>
+                    <p id="sunit">секунд</p>
+                </div>
             </div>
         </div>
         <div class="footer">

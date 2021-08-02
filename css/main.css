@@ -246,3 +246,43 @@ b{
 .mobile_menu{
     display: none;
 }
+
+.countdown{
+    margin-top: 25%;
+    text-align: center;
+}
+
+.countdown h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.countdown .units{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.countdown .units .unit{
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+}
+
+.countdown .units .unit h3{
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--primary)
+}
+
+.countdown .units .unit p{
+    font-size: 28px;
+    margin-top: -65px;
+}

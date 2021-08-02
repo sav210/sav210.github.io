@@ -67,11 +67,28 @@
         margin-top: 10%;
     }
 
-    .footer p{
-        font-size: 36px;
+    .footer{
+        display: none;
     }
 
-    .footer a{
-        display: none;
+    .countdown{
+        margin-top: 50%;
+    }
+
+    .countdown .units{
+        margin-top: 15%;
+    }
+
+    .countdown .units .unit {
+        width: 200px;
+    }
+
+    .countdown .units .unit h3{
+        font-size: 112px;
+    }
+    
+    .countdown .units .unit p{
+        font-size: 56px;
+        margin-top: -85px;
     }
 }
